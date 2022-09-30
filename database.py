@@ -24,4 +24,4 @@ armors = {
     "Chaos Armor": {"AC": 30, "Cost": 0},
 }
 
-monsters = {"Goblin": {"HP": 10, "Strength": 10, "Defense": 10,"Dexterity":0, "Gold": [1, 5]}}
+monsters = {"Goblin": {"HP": 100, "Strength": 10, "Defense": 10,"Dexterity":0, "Gold": [1, 5]}}
