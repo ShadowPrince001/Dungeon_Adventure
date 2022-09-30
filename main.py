@@ -21,7 +21,7 @@ print(f"Welcome to the dungeon!There is a {monster} here.")
 while True:
     armor = str(input("Enter Armor:"))
     weapon = str(input("Enter Weapon:"))
-    if armor in armors.keys() or weapon not in weapons.keys():
+    if armor in armors.keys() or weapon in weapons.keys():
         break
     else:
         print(
