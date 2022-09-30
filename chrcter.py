@@ -8,6 +8,8 @@ stats={"Strength":0,
        "Charisma":0,
        "Perception":0
        }
+
+stats_list=['Strength', 'Dexterity', 'Constitution', 'Intelligence', 'Wisdom', 'Charisma', 'Perception']
 def avatar():
     name=str(input("Welcome to Dungeon Adventure. I am the Dungeon Master. Adventurer, What is your name?\n"))
     print(name,",Lets start building your character")
@@ -28,9 +30,10 @@ def avatar():
                 if stats[x] ==0:
                     b +=1
             except KeyError:
-                print("That is not an attribute. The attributes you have are",list(stats.keys()))
+                print("That is not an attribute. The attributes you can choose are ",stats_list)
                 continue
         stats[x]=stat
+        stats_list.remove(x)
         print("Your current stats are\n")
         for key, value in stats.items():
             print(key, ' : ', value)
