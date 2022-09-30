@@ -27,8 +27,11 @@ while True:
         print(
             f"There is no such armor or weapon. Please choose again. The list of armor and weapons are"
         )
-        for key, value in stats.items():
+        for key, value in armors.items():
             print(key, ' : ', value)
+        for key, value in weapons.items():
+            print(key, ' : ', value)
+          
         pass
 while hp1 > 0 and hp2 > 0:
     if dex1 > dex2:
