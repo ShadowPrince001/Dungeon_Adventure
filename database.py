@@ -14,14 +14,25 @@ weapons = {
 }
 
 armors = {
+    "Linen Cloth": {"AC": 2, "Cost": 0},
     "Sage's Robe": {"AC": 5, "Cost": 0},
     "Leather Armor": {"AC": 8, "Cost": 0},
     "Chain Mail Armor": {"AC": 10, "Cost": 0},
     "Steel Armor": {"AC": 12, "Cost": 0},
-    "Diamon Armor": {"AC": 15, "Cost": 0},
+    "Diamond Armor": {"AC": 15, "Cost": 0},
     "Adamantine Armor": {"AC": 20, "Cost": 0},
     "Dragon Armor": {"AC": 25, "Cost": 0},
     "Chaos Armor": {"AC": 30, "Cost": 0},
 }
 
-monsters = {"Goblin": {"HP": 100, "Strength": 10, "Defense": 10,"Dexterity":0, "Gold": [1, 5]}}
+monsters = {
+    "Goblin": {
+        "HP": 75,
+        "Strength": 12,
+        "Defense": 12,
+        "Dexterity": 15,
+        "Weapon": "Dagger",
+        "Armor": "Linen Cloth",
+        "Gold": [1, 5],
+    }
+}
