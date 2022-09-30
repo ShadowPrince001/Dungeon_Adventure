@@ -23,4 +23,3 @@ def dmg_calc(atk, defens, strnth, weapn, armr,defnse):
     if dmg<0:
         dmg=0
     return(dmg)
-
