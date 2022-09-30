@@ -1,12 +1,26 @@
 import random
-weapon={"Dagger":[7,10]}
-armor={"Leather Armor":8}
-def dmg_calc(atk,defens,strnth,weapn,armr,dfnse):
-    if atk != defens:
-        dmg=2*(random.randint(weapon[weapn][0],weapon[weapn][1]))+strnth-dfnse-armor[armr]
-        print(dmg)
-    else:
-        dmg=(random.randint(weapon[weapn][0],weapon[weapn][1]))+strnth-dfnse-armor[armr]
-        print(dmg)
+from database import weapons
+from database import armors
 
-dmg_calc(1,2,15,"Dagger","Leather Armor",13)
+
+
+def dmg_calc(atk, defens, strnth, weapn, armr,defnse):
+    if atk != defens:
+        dmg = (
+            2
+            * int(random.randrange(weapons[weapn]["WC"][0], (weapons[weapn]["WC"][1])))
+            + strnth
+            - armors[armr]["AC"]
+            -defnse
+        )
+    else:
+        dmg = (
+            int(random.randrange(weapons[weapn]["WC"][0], (weapons[weapn]["WC"][1])))
+            + strnth
+            - armors[armr]["AC"]
+            -defnse
+        )
+    if dmg<0:
+        dmg=0
+    return(dmg)
+
