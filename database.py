@@ -9,7 +9,7 @@ weapons = {
     "Dwarven Axe": {"WC": (15, 19), "Cost": 100},
     "Broad Sword": {"WC": (17, 21), "Cost": 125},
     "Dragon Lance": {"WC": (20, 25), "Cost": 150},
-    "Chaos Blade": {"WC": (40, 50), "Cost": 250},
+    "Chaos Blade": {"WC": (40, 50), "Cost": 300},
 }
 
 armors = {
@@ -23,7 +23,7 @@ armors = {
     "Diamond Armor": {"AC": 15, "Cost": 100},
     "Adamantine Armor": {"AC": 20, "Cost": 125},
     "Dragon Armor": {"AC": 25, "Cost": 150},
-    "Chaos Armor": {"AC": 50, "Cost": 250},
+    "Chaos Armor": {"AC": 50, "Cost": 300},
 }
 
 potions = {
@@ -61,7 +61,7 @@ monsters = {
         "Dexterity": 14,
         "Weapon": "Dagger",
         "Armor": "Linen Cloth",
-        "Gold": [10, 20],
+        "Gold": [10, 50],
         "Floor": 3,
     },
     "Skeleton": {
