@@ -299,7 +299,14 @@ while hp1 > 0:
                     hp1 = enemy_atk(
                         monster, hp1, atk1, dfens1, str2, weapon2, armor1, def1
                     )
-                if hp1 == 0:
+                if hp1 == 0 and floor=16:
+                    print(
+                        f"Oh no!{monster} has killed you.{monster} searched your dead body and took all yours belonging."
+                    )
+                    sys.exit(
+                        "Adventurer, your journey ends here.You managed to save the villagers but could not defeat the creator of the tower. Better luck in your next try"
+                    )
+                elif hp1 == 0:
                     print(
                         f"Oh no! The {monster} has killed you. The {monster} searched your dead body and took all yours belonging."
                     )
