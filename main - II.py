@@ -403,6 +403,8 @@ while hp1 > 0:
                         f"Both you and the {monster} are tired and decide to continue fighting next time. You descend into the previous floor"
                     )
                     floor -= 1
+                    with open("floor.dat", "wb") as fout:
+                        pickle.dump(floor,fout)
                     break
                 else:
 
